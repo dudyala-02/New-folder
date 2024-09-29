@@ -1,3 +1,7 @@
+//const sum=(a,b)=>a+b;
+//let data=sum(1,2);
+alert(data);
+
 const laptop={
 brand:"lenovo",
 color:"cement",
@@ -7,32 +11,6 @@ for(let k in laptop)
 {
     console.log(`laptop ${k} is ${laptop[k]}`);
 ;}
-let x=prompt("enter 1st value");
-let y=prompt("enter 2nd value"); 
-let action=prompt("enter operation to be performed");
-x=parseInt(x);
-y=parseInt(y);
-switch(action)
-{ 
-    case "+":
-        alert(x+y);
-        break;
-    case "-":
-        alert(x-y);
-        break;
-    case "*":
-        alert(x*y);
-        break;
-    case "/":
-        alert(x/y);
-        break;
-    case "%":
-        alert(x%y);
-        break;
-    default:
-        alert("no operation");
-        break;
-}
 
 
 function greet(params){

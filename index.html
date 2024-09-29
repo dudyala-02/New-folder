@@ -113,12 +113,47 @@
         </tbody>
     </table>
 <script>
-    a=5
-    b=5
-    console.log(a)
-    document.write("sailaja")
+    //destructuring
+    const person={
+        name:"siara",
+        gender:2
+    }
+const{name,gender}=person;
+console.log(name);
+console.log(gender);
+
+
+    let num=[1,2,3,4,5];
+    let x=num.forEach((ele,i)=>{
+        return ele*2;
+    });
+    let y=num.map((ele,i)=>{
+        return ele*2;
+    });
+    let filtered=num.filter((ele,i)=>{
+        return ele % 2!==0;
+    });
+    console.log(x);
+    console.log(y);
+    console.log(filtered);
+
+
+    let array1=[1,2,3,4];
+    let array2=[...array1,5,6,7,8];
+    console.log(array2);
+    function sum(a,b,c,d){
+        console.log(a+b+c+d);
+    }
+    sum(...array1);
+
+
+
+    //sum=(a,b)=>a+b;
+    //let data=sum(1,2);
+    //alert(data);
+    
 </script>
-<script src="./function.js"></script>
+
 
 </body>
 </html>
